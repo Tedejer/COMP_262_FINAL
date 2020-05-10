@@ -3,7 +3,7 @@ project(Final C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Final src/main.c src/crypto.h)
+add_executable(Final src/crypto.c src/crypto.h)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -fopenmp")
 
