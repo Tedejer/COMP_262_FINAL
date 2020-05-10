@@ -1,8 +1,6 @@
-#include <stdio.h> 
-#include <math.h> 
-#include <time.h>
-#include <omp.h>
-  
+
+#include "crypto.h"
+
 // A function to print all prime factors of a given number n 
 void primeFactors(int n) 
 { 
@@ -27,8 +25,8 @@ void primeFactors(int n)
                 printf("%d ", i); 
                 n = n/i; 
             } 
-        } 
-      
+        }
+
         // This condition is to handle the case when n  
         // is a prime number greater than 2 
         #pragma omp single
